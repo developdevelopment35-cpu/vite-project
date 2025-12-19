@@ -71,7 +71,7 @@ const App = () => {
           <section>
             <Search Searchiteam={Searchiteam} setSearchiteam={setSearchiteam} />
             <h1>All Movies</h1>
-          
+
             {loading ? (
               <h2>Loading...</h2>
             ) : error ? (
@@ -90,21 +90,6 @@ const App = () => {
             ) : (
               <h2>No movies found</h2>
             )}
-
-            {/* {filteredMovies && filteredMovies.length > 0 ? (
-              <div className="movie-container">
-                {filteredMovies.map((movie, index) => (
-                  <MoviesContainer
-                    key={index}
-                    poster={movie.poster}
-                    title={movie.title}
-                    rate={movie.rating}
-                  />
-                ))}
-              </div>
-            ) : (
-              <h2>No movies found</h2>
-            )} */}
           </section>
         </div>
       </main>
