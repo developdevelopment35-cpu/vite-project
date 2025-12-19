@@ -15,7 +15,6 @@ const App = () => {
   const [debouncedSearchiteam , setedebouncedSearchiteam ] = useState(); // this debounced for not spaming api it will wait 5s the it give user type data to api 
 
   useDebounce(() => setedebouncedSearchiteam(Searchiteam) , 500 , [Searchiteam])
-
   // this is api fecting code :)
 
   const fetchMovies = async (query) => {
@@ -26,8 +25,8 @@ const App = () => {
 
     try {
       const urlapi = query
-        ? `${API_BASE_URL}${API_KEY}&s=${query}&page=1`
-        : `${API_BASE_URL}${API_KEY}&s=movie&page=1`;
+        ? `${API_BASE_URL}${API_KEY}&s=${query}&page=4`
+        : `${API_BASE_URL}${API_KEY}&s=movie&page=${ Math.floor(Math.random() * 10) + 1}`;
       console.log(urlapi);
 
       const response = await fetch(urlapi);

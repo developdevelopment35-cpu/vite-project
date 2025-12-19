@@ -116,18 +116,17 @@
 .movies-poster {
   width: 400px;
   height: 500px;
+  border: 10px solid #00ffff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: solid 1;
-  border-color: aqua;
 }
 
 .movies-poster img {
   width: 100%;
   height: 100%;
   object-fit: cover;   /* ensures all images are square and uniform */
-}
+  }
 
 .movies-info {
   text-align: center;
