@@ -35,7 +35,7 @@ const App = () => {
         throw new Error("Network response was not ok");
       }
 
-      // this code covert api data into json data 
+      // this code covert api data into json data
 
       const data = await response.json();
       console.log(data);
